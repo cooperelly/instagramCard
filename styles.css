@@ -1,0 +1,141 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+body{
+  height: 100vh;
+  background: url(bg-image.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img{
+  width: 450px;
+  height: 450px;
+}
+
+.profile-card{
+  width: 400px;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-header{
+  background: #C39876;
+  opacity: 90%;
+  padding: 60px 40px;
+}
+
+.pic{
+  display: inline-block;
+  padding: 8px;
+  background: linear-gradient(130deg, #FF808C, #83CDFF);
+  margin: auto;
+  border-radius: 50%;
+  background-size: 200% 200%;
+  animation: animated-gradient 2s linear infinite;
+}
+
+@keyframes animated-gradient{
+  25%{
+    background-position: left bottom;
+  }
+  50%{
+    background-position: right bottom;
+  }
+  75%{
+    background-position: right top;
+  }
+  100%{
+    background-position: left top;
+  }
+}
+
+.pic img{
+  display:block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.name{
+  color: #f2f2f2;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.desc{
+  font-size: 18px;
+  color:#FFC1B5
+}
+
+.sm{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.sm a{
+  color: #f2f2f2;
+  width: 56px;
+  font-size: 22px;
+  transition: .4s linear;
+}
+
+.sm a:hover{
+  color: #FFC1B5;
+}
+
+.contact-btn{
+  display: inline-block;
+  padding: 12px 50px;
+  color: #FFC1B5;
+  border: 2px solid #FFC1B5;
+  border-radius: 6px;
+  margin-top: 16px;
+  transition: .3s linear;
+}
+
+.contact-btn:hover{
+  background-color: #FFC1B5;
+  color: white;
+}
+
+.card-footer{
+  background-color: #f4f4f4;
+  padding: 60px 10px;
+}
+
+.numbers{
+  display: flex;
+  align-items: center;
+}
+
+.item{
+  flex: 1;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #FEB4A6;
+  font-weight: 600;
+}
+
+.item span{
+  display: block;
+  color: #2c3a47;
+  font-size: 30px;
+}
+
+.border{
+  width: 1px;
+  height: 30px;
+  background: #bbb;
+}
